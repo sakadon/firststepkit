@@ -5,7 +5,8 @@
 * local httpd (also, MAMP) with 80 port listen.
 
 ## How to start
-1. Please starting httpd for localhost, here listen 80 port
+0. Setting httpd DocumentRoot for this repo directory
+1. Starting httpd for localhost, here listen 80 port
 2. Get this repo
 3. $ npm install -g
 4. $ gulp watch
