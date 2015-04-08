@@ -93,19 +93,22 @@ gulp.task( 'bs-reload', function() {
 // Gulp watch
 gulp.task( 'watch', ['bs-func'], function(){
 	
-	// for PC
-	watch( './_scss/*.scss', function(){ gulp.start( 'sass' ) });
-	watch( './css/*.css', function(){ gulp.start( 'bs-reload' ) });
-    watch( './_jade/*.jade', function(){ gulp.start( 'jade_html' ) });
-    watch( './_jade/*.json', function(){ gulp.start( 'jade_html' ) });
-	watch( './*.html', function(){ gulp.start( 'bs-reload' ) });
-	watch( './*.php', function(){ gulp.start( 'bs-reload' ) });
-	watch( './_jssrc/*.js', function(){ gulp.start( 'jscomp' ) });
-	watch( './_jssrc/*.coffee', function(){ gulp.start( 'coffee' ) });
-	// Image reload
-	watch( './img/*.png', function(){ gulp.start( 'bs-reload' ) });
-	watch( './img/*.gif', function(){ gulp.start( 'bs-reload' ) });
-	watch( './img/*.jpg', function(){ gulp.start( 'bs-reload' ) });
+	watch( './src/scss/*.scss', function(){ gulp.start( 'sass' ) });
+	watch( './public_html/css/*.css', function(){ gulp.start( 'bs-reload' ) });
+    
+    watch( './src/jade/*.jade', function(){ gulp.start( 'jade' ) });
+    watch( './src/jade/*.json', function(){ gulp.start( 'jade' ) });
+	
+    watch( './public_html/*.html', function(){ gulp.start( 'bs-reload' ) });
+	watch( './public_html/*.php', function(){ gulp.start( 'bs-reload' ) });
+	
+    watch( './src/js/*.js', function(){ gulp.start( 'jscomp' ) });
+	watch( './src/js/*.coffee', function(){ gulp.start( 'coffee' ) });
+    watch( './public_html/js/*.js', function(){ gulp.start( 'bs-reload' ) });
+	
+	watch( './public_html/img/*.png', function(){ gulp.start( 'bs-reload' ) });
+	watch( './public_html/img/*.gif', function(){ gulp.start( 'bs-reload' ) });
+	watch( './public_html/img/*.jpg', function(){ gulp.start( 'bs-reload' ) });
 
 });
 
