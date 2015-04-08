@@ -1,0 +1,37 @@
+{
+  "name": "firststepkit",
+  "version": "1.0.0",
+  "description": "sakadon's starter kit for website creation",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakadon/firststepkit.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "sakadon",
+  "license": "public domain",
+  "bugs": {
+    "url": "https://github.com/sakadon/firststepkit/issues"
+  },
+  "homepage": "https://github.com/sakadon/firststepkit",
+  "devDependencies": {
+    "browser-sync": "^2.5.3",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-data": "^1.2.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-jsmin": "^0.1.4",
+    "gulp-less": "^3.0.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-watch": "^4.2.4"
+  }
+}
